@@ -695,20 +695,20 @@ body {
 
 h1 {
   margin: 0 0 .5em;
-  font-size: 1.8em; }
+  font-size: 2em; }
 
 h2 {
-  margin: 1em 0 .5em;
-  font-size: 1.4em; }
+  margin: 2em 0 .5em;
+  font-size: 1.6em; }
 
 h3 {
   margin: 1.5em 0 .3em;
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: bold; }
 
 h4 {
-  margin: 1.5em 0 .3em;
-  font-size: .88888888em; }
+  margin: 0 0 .3em;
+  font-size: 1.2em; }
 
 h1,
 h2,
@@ -717,7 +717,7 @@ h4 {
   color: #2E496E; }
 
 p {
-  margin: 1em 0;
+  margin: 0 0 1em;
   line-height: 1.5; }
 
 img {
@@ -749,10 +749,10 @@ figure {
   padding: 0; }
 
 figcaption {
-  font-size: 0.875em;
-  color: #737373;
   display: block;
-  margin: .4em 0; }
+  margin: .4em 0;
+  color: #737373;
+  font-size: 0.875em; }
 
 table {
   width: 100%;
@@ -782,7 +782,8 @@ ol {
   padding-left: 1.5em; }
   ul li,
   ol li {
-    margin-bottom: .2em; }
+    margin-bottom: .2em;
+    line-height: 1.5; }
 
 dt {
   font-weight: bold; }
@@ -911,6 +912,9 @@ th {
 .disabled {
   background: #eee; }
 
+.padding-left {
+  padding-left: 3em; }
+
 .textarea span {
   display: block;
   margin: 0 0 .3em; }
@@ -933,18 +937,19 @@ th {
   position: relative;
   left: 0;
   top: 0;
-  width: 22px;
-  height: 22px; }
+  width: 18px;
+  height: 18px; }
 
 .check__label {
   position: absolute;
   left: -4px;
   top: -4px;
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   text-indent: -10000px;
-  border: 1px solid #666;
-  background-color: #ffd; }
+  background-image: url(../img/check_01.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
 
 .check__control:checked + .check__label {
   background-image: url(../img/check_02.png);
@@ -960,3 +965,10 @@ th {
   .check__control:focus + .check__label {
     outline-color: -webkit-focus-ring-color;
     outline-style: auto; } }
+
+.level {
+  display: inline-block;
+  padding: .2em .6em;
+  border-radius: .3em;
+  background: #000;
+  color: #fff; }

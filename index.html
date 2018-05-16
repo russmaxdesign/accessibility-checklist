@@ -10,18 +10,31 @@
   <form action="#">
     <div class="container">
       <h1>WCAG 2.0 Level AAA Compliance Worksheet</h1>
-      <p>This worksheet has been prepared in the form of checklist to allow web site developers and testers to record the level of compliance by Website or Web pages with the Success Criteria of the Web Content Accessibility Guidelines Version 2.0 (WCAG 2.0).</p>
-      <p>The table contains the all the WCAG 2.0 normative Success Criteria, which are the requirements for complying with WCAG 2.0 at Level AAA. Next to each Success Criterion, are some of the Sufficient Techniques from the informative "How to Meet WCAG 2.0" document that provide advice on how to comply with that criterion.</p> 
-      <p>The first page of the document contains a form which can be used to record basic information about the Website for use in preparing a formal Accessibility Conformance Statement.</p>
-      <p>Supporting information:</p>
+
+      <h2>How to use this worksheet</h2>
+      <p>This worksheet contains a checklist to allow web site developers and testers to record the level of compliance of Websites or Web pages with the Success Criteria of the Web Content Accessibility Guidelines Version 2.0 (WCAG 2.0).</p>
+      <p>The table contains the all the WCAG 2.0 normative Success Criteria, which are the requirements for complying with WCAG 2.0 at Level AAA. Next to each Success Criterion, are some of the Sufficient Techniques that provide advice on how to comply with that criterion.</p> 
+      
+      <h2>Priority ranking</h2>
+      <p>Each Success Criteria is given a priority ranking. The different options are:</p>
       <ul>
+        <li>Low: Could present barriers for some users, but not considered a priority</li>
+        <li>Medium: Could present barriers for users and should be addressed when time</li>
+        <li>High: Could present barriers for users and should be addressed as soon as possible</li>
+        <li>Critical: Could present significant barriers for users and must be addressed before proceeding</li>
+      </ul>
+
+      <h2>Supporting information:</h2>
+      <ul>
+        <li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a></li>
+        <li><a href="https://www.w3.org/WAI/WCAG20/glance/">WCAG 2 at a Glance</a></li>
         <li><a href="https://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></li>
         <li><a href="https://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</a></li>
         <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/">Understanding WCAG 2.0</a></li>
-        <li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</a></li>
-        <li><a href="https://www.w3.org/WAI/WCAG20/glance/">WCAG 2 at a Glance</a></li>
-        <li><a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a></li>
       </ul>
+
+      <h2>Credit</h2>
       <p>This document was created by Roger Hudson using the Web Content Accessibility Guidelines and other material prepared by the W3C. Please send feedback and any suggestions about errors and omissions to <a href="mailto:rhudson@usability.com.au">rhudson@usability.com.au</a></p>
 
       <hr />
@@ -65,13 +78,12 @@
       <hr />
 
       <h2>Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.</h2>
-      <p><b>Guideline 1.1 Text Alternatives</b>: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</p>
+      <h3><a href="https://www.w3.org/TR/WCAG20/#text-equiv">Guideline 1.1 Text Alternatives</a></h3>
+      <p>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</p>
     </div>
 
-    <form action="#">
     <table>
       <tr>
-        <th class="width5">Level</th>
         <th class="width40">Success Criterion</th>
         <th class="width40">Some Sufficient Techniques</th>
         <th class="width5">Yes</th>
@@ -79,50 +91,50 @@
         <th class="width5">No</th>
       </tr>
       <tr>
-        <td rowspan="31">
-          <p><b>A</b></p>
-        </td>
-        <td rowspan="31">
-          <p><b>1.1.1 Non-text content:</b> All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.</p>
+        <td rowspan="80">
+          <h4>1.1.1 Non-text Content</h4>
+          <p><span class="level levela">Level A</span></p>
+          <p>All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.</p>
           <ul>
-            <li><b>Controls, Input:</b> then it has a name that describes its purpose.</li>
-            <li><b>Time-Based Media:</b> then text alternatives at least provide descriptive identification of the non-text content.</li>
-            <li><b>Test:</b> then text alternatives at least provide descriptive identification of the non-text content.</li>
-            <li><b>Sensory:</b> then text alternatives at least provide descriptive identification of the non-text content.</li>
-            <li><b>CAPTCHA:</b> then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes are provided to accommodate different disabilities.</li>
-            <li><b>Decoration, Formatting, Invisible:</b> then it is implemented in a way that it can be ignored by assistive technology.</li>
+            <li>
+              <p><b>Controls, Input:</b> If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Guideline 4.1 for additional requirements for controls and content that accepts user input.)</p>
+            </li>
+            <li>
+              <p><b>Time-Based Media:</b> If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.)</p>
+            </li>
+            <li>
+              <p><b>Test:</b> If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content.</p>
+            </li>
+            <li>
+              <p><b>Sensory:</b> If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content.</p>
+            </li>
+            <li>
+              <p><b>CAPTCHA:</b> If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities.</p></li>
+            <li>
+              <p><b>Decoration, Formatting, Invisible:</b> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.</p>
+            </li>
           </ul>
         </td>
         <td colspan="4" class="disabled">
-          <p><b>Situation A: </b>If short description can serve the same purpose and present the same information</p>
+          <b>Situation A</b>: If a short description can serve the same purpose and present the same information as the non-text content:
         </td>
       </tr>
       <tr>
         <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G94"><b>G94:</b></a> Providing short text alternative for non-text content using a short text alternative technique listed below:</p>
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/G94.html">G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</a> <i>using one of the following techniques</i>:
         </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g94-yes" type="radio" name="sc111-g94">
-            <label class="check__label" for="sc111-g94-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g94-part" type="radio" name="sc111-g94">
-            <label class="check__label" for="sc111-g94-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g94-no" type="radio" name="sc111-g94">
-            <label class="check__label" for="sc111-g94-no">No</label>
-          </div>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          Short text alternative techniques for Situation A:
         </td>
       </tr>
       <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/ARIA6"><b>ARIA6:</b></a> Using aria-label to provide labels for objects</p>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html">ARIA6: Using aria-label to provide labels for objects</a>
         </td>
         <td>
           <div class="check">
@@ -144,8 +156,8 @@
         </td>
       </tr>
       <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/ARIA10"><b>ARIA10:</b></a> Using aria-labelledby to provide a text alternative for non-text content</p>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA10.html">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
         </td>
         <td>
           <div class="check">
@@ -167,8 +179,100 @@
         </td>
       </tr>
       <tr>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/G196.html">G196: Using a text alternative on one item within a group of images that describes all items in the group</a>
+        </td>
         <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/H2"><b>H2:</b></a> Combining image and text links for the same resource</p>
+          <div class="check">
+            <input class="check__control" id="sc111-g196-yes" type="radio" name="sc111-g196">
+            <label class="check__label" for="sc111-g196-yes">Yes</label>
+          </div>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-g196-part" type="radio" name="sc111-g196">
+            <label class="check__label" for="sc111-g196-part">Part</label>
+          </div>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-g196-no" type="radio" name="sc111-g196">
+            <label class="check__label" for="sc111-g196-no">No</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH1.html">FLASH1: Setting the name property for a non-text object</a>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-flash1-yes" type="radio" name="sc111-flash1">
+            <label class="check__label" for="sc111-flash1-yes">Yes</label>
+          </div>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-flash1-part" type="radio" name="sc111-flash1">
+            <label class="check__label" for="sc111-flash1-part">Part</label>
+          </div>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-flash1-no" type="radio" name="sc111-flash1">
+            <label class="check__label" for="sc111-flash1-no">No</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH5.html">FLASH5: Combining adjacent image and text buttons for the same resource</a>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-flash5-yes" type="radio" name="sc111-flash5">
+            <label class="check__label" for="sc111-flash5-yes">Yes</label>
+          </div>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-flash5-part" type="radio" name="sc111-flash5">
+            <label class="check__label" for="sc111-flash5-part">Part</label>
+          </div>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-flash5-no" type="radio" name="sc111-flash5">
+            <label class="check__label" for="sc111-flash5-no">No</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH28.html">FLASH28: Providing text alternatives for ASCII art, emoticons, and leetspeak in Flash</a>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-flash28-yes" type="radio" name="sc111-flash28">
+            <label class="check__label" for="sc111-flash28-yes">Yes</label>
+          </div>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-flash28-part" type="radio" name="sc111-flash28">
+            <label class="check__label" for="sc111-flash28-part">Part</label>
+          </div>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-flash28-no" type="radio" name="sc111-flash28">
+            <label class="check__label" for="sc111-flash28-no">No</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H2.html">H2: Combining adjacent image and text links for the same resource</a>
         </td>
         <td>
           <div class="check">
@@ -190,32 +294,8 @@
         </td>
       </tr>
       <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/H37"><b>H37:</b></a> Alt attributes on img elements</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h37-yes" type="radio" name="sc111-h37">
-            <label class="check__label" for="sc111-h37-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h37-part" type="radio" name="sc111-h37">
-            <label class="check__label" for="sc111-h37-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h37-no" type="radio" name="sc111-h37">
-            <label class="check__label" for="sc111-h37-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/H35"><b>H35:</b></a> Text alternatives on applet elements</p>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H35.html">H35: Providing text alternatives on applet elements</a>
         </td>
         <td>
           <div class="check">
@@ -236,10 +316,32 @@
           </div>
         </td>
       </tr>
+      <tr>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H37.html">H37: Using alt attributes on img elements</a>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-h37-yes" type="radio" name="sc111-h37">
+            <label class="check__label" for="sc111-h37-yes">Yes</label>
+          </div>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-h37-part" type="radio" name="sc111-h37">
+            <label class="check__label" for="sc111-h37-part">Part</label>
+          </div>
+        </td>
+        <td>
+          <div class="check">
+            <input class="check__control" id="sc111-h37-no" type="radio" name="sc111-h37">
+            <label class="check__label" for="sc111-h37-no">No</label>
+          </div>
+        </td>
       </tr>
       <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/H53"><b>H53:</b></a> Using the body of the object element</p>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H53.html">H53: Using the body of the object element</a>
         </td>
         <td>
           <div class="check">
@@ -260,10 +362,9 @@
           </div>
         </td>
       </tr>
-      </tr>
       <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/H86"><b>H86:</b></a> Text alterns for ASCII art, emoticons, and leetspeak</p>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H86.html">H86: Providing text alternatives for ASCII art, emoticons, and leetspeak</a>
         </td>
         <td>
           <div class="check">
@@ -284,421 +385,535 @@
           </div>
         </td>
       </tr>
-      </tr>
       <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G196"><b>G196:</b></a> Text alternative on one item within a group of images that describes all items in the group</p>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/PDF1.html">PDF1: Applying text alternatives to images with the Alt entry in PDF documents</a>
         </td>
         <td>
           <div class="check">
-            <input class="check__control" id="sc111-g196-yes" type="radio" name="sc111-g196">
-            <label class="check__label" for="sc111-g196-yes">Yes</label>
+            <input class="check__control" id="sc111-pdf1-yes" type="radio" name="sc111-pdf1">
+            <label class="check__label" for="sc111-pdf1-yes">Yes</label>
           </div>
         </td>
         <td>
           <div class="check">
-            <input class="check__control" id="sc111-g196-part" type="radio" name="sc111-g196">
-            <label class="check__label" for="sc111-g196-part">Part</label>
+            <input class="check__control" id="sc111-pdf1-part" type="radio" name="sc111-pdf1">
+            <label class="check__label" for="sc111-pdf1-part">Part</label>
           </div>
         </td>
         <td>
           <div class="check">
-            <input class="check__control" id="sc111-g196-no" type="radio" name="sc111-g196">
-            <label class="check__label" for="sc111-g196-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td colspan="4" class="disabled">
-          <p><b>Situation B: </b>If a short description can <b>not</b> serve the same purpose and present the same information as the non-text content (e.g. a chart or diagram):</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/ARIA15"><b>ARIA15:</b></a> Using aria-describedby to provide descriptions of images</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-aria15-yes" type="radio" name="sc111-aria15">
-            <label class="check__label" for="sc111-aria15-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-aria15-part" type="radio" name="sc111-aria15">
-            <label class="check__label" for="sc111-aria15-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-aria15-no" type="radio" name="sc111-aria15">
-            <label class="check__label" for="sc111-aria15-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G92"><b>G92:</b></a> Long description for non-text content using longdesc (H45) or body of the object element (H53)</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g92-yes" type="radio" name="sc111-g92">
-            <label class="check__label" for="sc111-g92-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g92-part" type="radio" name="sc111-g92">
-            <label class="check__label" for="sc111-g92-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g92-no" type="radio" name="sc111-g92">
-            <label class="check__label" for="sc111-g92-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G74"><b>G74:</b></a> Long description in text near the non-text content</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g74-yes" type="radio" name="sc111-g74">
-            <label class="check__label" for="sc111-g74-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g74-part" type="radio" name="sc111-g74">
-            <label class="check__label" for="sc111-g74-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g74-no" type="radio" name="sc111-g74">
-            <label class="check__label" for="sc111-g74-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G73"><b>G73:</b></a> Long description in another location with a link to it that is immediately adjacent to the non-text content</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g73-yes" type="radio" name="sc111-g73">
-            <label class="check__label" for="sc111-g73-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g73-part" type="radio" name="sc111-g73">
-            <label class="check__label" for="sc111-g73-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g73-no" type="radio" name="sc111-g73">
-            <label class="check__label" for="sc111-g73-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/H45"><b>H45:</b></a> Using longdesc</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h45-yes" type="radio" name="sc111-h45">
-            <label class="check__label" for="sc111-h45-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h45-part" type="radio" name="sc111-h45">
-            <label class="check__label" for="sc111-h45-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h45-no" type="radio" name="sc111-h45">
-            <label class="check__label" for="sc111-h45-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td colspan="4" class="disabled">
-          <p><b>Situation C</b>: If non-text content is a control or accepts user input:</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/ARIA6"><b>ARIA6:</b></a> Using aria-label to provide labels for objects</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-aria6-yes" type="radio" name="sc111-aria6">
-            <label class="check__label" for="sc111-aria6-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-aria6-part" type="radio" name="sc111-aria6">
-            <label class="check__label" for="sc111-aria6-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-aria6-no" type="radio" name="sc111-aria6">
-            <label class="check__label" for="sc111-aria6-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/ARIA9"><b>ARIA9:</b></a> Using aria-labelledby to concatenate a label from several text nodes</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-aria9-yes" type="radio" name="sc111-aria9">
-            <label class="check__label" for="sc111-aria9-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-aria9-part" type="radio" name="sc111-aria9">
-            <label class="check__label" for="sc111-aria9-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-aria9-no" type="radio" name="sc111-aria9">
-            <label class="check__label" for="sc111-aria9-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/H36"><b>H36:</b></a> Using alt attributes on images used as submit buttons</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h36-yes" type="radio" name="sc111-h36">
-            <label class="check__label" for="sc111-h36-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h36-part" type="radio" name="sc111-h36">
-            <label class="check__label" for="sc111-h36-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h36-no" type="radio" name="sc111-h36">
-            <label class="check__label" for="sc111-h36-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/H44"><b>H44:</b></a> Label elements to associate text labels with form controls</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h44-yes" type="radio" name="sc111-h44">
-            <label class="check__label" for="sc111-h44-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h44-part" type="radio" name="sc111-h44">
-            <label class="check__label" for="sc111-h44-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h44-no" type="radio" name="sc111-h44">
-            <label class="check__label" for="sc111-h44-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/H65"><b>H65:</b></a> Title attribute to identify form controls when the label element cannot be used</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h65-yes" type="radio" name="sc111-h65">
-            <label class="check__label" for="sc111-h65-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h65-part" type="radio" name="sc111-h65">
-            <label class="check__label" for="sc111-h65-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h65-no" type="radio" name="sc111-h65">
-            <label class="check__label" for="sc111-h65-no">No</label>
-          </div>
-        </td>
-      </tr>
-      </tr>
-      <tr>
-        <td colspan="4" class="disabled">
-          <p><b>Situation D: </b>If non-text content is time-based media (including live video and audio); a test or exercise that would be invalid if presented in text; or primarily intended  to create a specific sensory experience:</p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="4" class="disabled">
-          <p>Provide a descriptive label using a short text alternative technique</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G68"><b>G68:</b></a> Label that describes the purpose of live audio-only and live video-only content using a short text alternative</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g68-yes" type="radio" name="sc111-g68">
-            <label class="check__label" for="sc111-g68-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g68-part" type="radio" name="sc111-g68">
-            <label class="check__label" for="sc111-g68-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g68-no" type="radio" name="sc111-g68">
-            <label class="check__label" for="sc111-g68-no">No</label>
+            <input class="check__control" id="sc111-pdf1-no" type="radio" name="sc111-pdf1">
+            <label class="check__label" for="sc111-pdf1-no">No</label>
           </div>
         </td>
       </tr>
       <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G100"><b>G100:</b></a> Provide the accepted name or a descriptive name of the non-text content using a short text alternative</p>
+        <td class=" padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/SL5.html">SL5: Defining a Focusable Image Class for Silverlight</a>
         </td>
         <td>
           <div class="check">
-            <input class="check__control" id="sc111-g100-yes" type="radio" name="sc111-g100">
-            <label class="check__label" for="sc111-g100-yes">Yes</label>
+            <input class="check__control" id="sc111-sl5-yes" type="radio" name="sc111-sl5">
+            <label class="check__label" for="sc111-sl5-yes">Yes</label>
           </div>
         </td>
         <td>
           <div class="check">
-            <input class="check__control" id="sc111-g100-part" type="radio" name="sc111-g100">
-            <label class="check__label" for="sc111-g100-part">Part</label>
+            <input class="check__control" id="sc111-sl5-part" type="radio" name="sc111-sl5">
+            <label class="check__label" for="sc111-sl5-part">Part</label>
           </div>
         </td>
         <td>
           <div class="check">
-            <input class="check__control" id="sc111-g100-no" type="radio" name="sc111-g100">
-            <label class="check__label" for="sc111-g100-no">No</label>
+            <input class="check__control" id="sc111-sl5-no" type="radio" name="sc111-sl5">
+            <label class="check__label" for="sc111-sl5-no">No</label>
           </div>
         </td>
       </tr>
       <tr>
         <td colspan="4" class="disabled">
-          <p><b>Situation E: </b>If non-text content is a CAPTCHA:</p>
+          Situation B: If a short description can not serve the same purpose and present the same information as the non-text content (e.g., a chart or diagram):
         </td>
       </tr>
       <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G143"><b>G143:</b></a> Text that describes the purpose of the CAPTCHA <b>AND</b>
-         </p>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G144"><b>G144:</b></a> Ensure the Web Page contains another CAPTCHA with the same purpose using a different modality</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g143-yes" type="radio" name="sc111-g143">
-            <label class="check__label" for="sc111-g143-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g143-part" type="radio" name="sc111-g143">
-            <label class="check__label" for="sc111-g143-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-g143-no" type="radio" name="sc111-g143">
-            <label class="check__label" for="sc111-g143-no">No</label>
-          </div>
+        <td colspan="4">
+          Short text alternative techniques for Situation B:
         </td>
       </tr>
       <tr>
-        <td colspan="4" class="disabled">
-          <p><b>Situation F: </b>If the non-text content should be ignored by assistive technology:</p>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html">ARIA6: Using aria-label to provide labels for objects</a>
         </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/H67"><b>H67:</b></a> Null alt text and no title attribute on img elements for images that AT should ignore</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h67-yes" type="radio" name="sc111-h67">
-            <label class="check__label" for="sc111-h67-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h67-part" type="radio" name="sc111-h67">
-            <label class="check__label" for="sc111-h67-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-h67-no" type="radio" name="sc111-h67">
-            <label class="check__label" for="sc111-h67-no">No</label>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C9"><b>C9:</b></a> Using CSS to include decorative images</p>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-c9-yes" type="radio" name="sc111-c9">
-            <label class="check__label" for="sc111-c9-yes">Yes</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-c9-part" type="radio" name="sc111-c9">
-            <label class="check__label" for="sc111-c9-part">Part</label>
-          </div>
-        </td>
-        <td>
-          <div class="check">
-            <input class="check__control" id="sc111-c9-no" type="radio" name="sc111-c9">
-            <label class="check__label" for="sc111-c9-no">No</label>
-          </div>
-        </td>
-      </tr>
-      <tr class="disabled">
-        <td class="disabled"></td>
         <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA10.html">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/G196.html">G196: Using a text alternative on one item within a group of images that describes all items in the group </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH1.html">FLASH1: Setting the name property for a non-text object</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH5.html">FLASH5: Combining adjacent image and text buttons for the same resource</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH28.html">FLASH28: Providing text alternatives for ASCII art, emoticons, and leetspeak in Flash</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H2.html">H2: Combining adjacent image and text links for the same resource</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H35.html">H35: Providing text alternatives on applet elements</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H37.html">H37: Using alt attributes on img elements</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H53.html">H53: Using the body of the object element</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H86.html">H86: Providing text alternatives for ASCII art, emoticons, and leetspeak</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/PDF1.html">PDF1: Applying text alternatives to images with the Alt entry in PDF documents</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/SL5.html">SL5: Defining a Focusable Image Class for Silverlight</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          Long text alternative techniques for Situation B:
+        </td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA15.html">ARIA15: Using aria-describedby to provide descriptions of images</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/G73.html">G73: Providing a long description in another location with a link to it that is immediately adjacent to the non-text content</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/G74.html">G74: Providing a long description in text near the non-text content, with a reference to the location of the long description in the short description </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/G92.html">G92: Providing long description for non-text content that serves the same purpose and presents the same information</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH2.html">FLASH2: Setting the description property for a non-text object in Flash</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH11.html">FLASH11: Providing a longer text description of an object</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H45.html">H45: Using longdesc</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H53.html">H53: Using the body of the object element</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/SL8.html">SL8: Displaying HelpText in Silverlight User Interfaces</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="disabled">
+          <b>Situation C</b>: If non-text content is a control or accepts user input:
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/G82.html">G82: Providing a text alternative that identifies the purpose of the non-text content</a> <i>using one of the following techniques:</i>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          Text alternative techniques for controls and input for Situation C:
+        </td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html">ARIA6: Using aria-label to provide labels for objects </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA9.html">ARIA9: Using aria-labelledby to concatenate a label from several text nodes </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH6.html">FLASH6: Creating accessible hotspots using invisible buttons </a>
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH27.html">FLASH27: Providing button labels that describe the purpose of a button </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH29.html">FLASH29: Setting the label property for form components </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH30.html">FLASH30: Specifying accessible names for image buttons </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH32.html">FLASH32: Using auto labeling to associate text labels with form controls </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H24.html">H24: Providing text alternatives for the area elements of image maps </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H30.html">H30: Providing link text that describes the purpose of a link for anchor elements </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H36.html">H36: Using alt attributes on images used as submit buttons </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H44.html">H44: Using label elements to associate text labels with form controls </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H65.html">H65: Using the title attribute to identify form controls when the label element cannot be used </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/SL18.html">SL18: Providing Text Equivalent for Nontext Silverlight Controls With AutomationProperties.Name </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/SL26.html">SL26: Using LabeledBy to Associate Labels and Targets in Silverlight </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/SL30.html">SL30: Using Silverlight Control Compositing and AutomationProperties.Name </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="disabled">
+          Situation D: If non-text content is time-based media (including live video-only and live audio-only); a test or exercise that would be invalid if presented in text; or primarily intended to create a specific sensory experience:
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          Providing a descriptive label (future link) <i>using one of the following techniques</i>:
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          Short text alternative techniques for Situation D:
+        </td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html">ARIA6: Using aria-label to provide labels for objects </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA10.html">ARIA10: Using aria-labelledby to provide a text alternative for non-text content </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/G196.html">G196: Using a text alternative on one item within a group of images that describes all items in the group </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH1.html">FLASH1: Setting the name property for a non-text object </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH5.html">FLASH5: Combining adjacent image and text buttons for the same resource </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH28.html">FLASH28: Providing text alternatives for ASCII art, emoticons, and leetspeak in Flash </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H2.html">H2: Combining adjacent image and text links for the same resource </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H35.html">H35: Providing text alternatives on applet elements </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H37.html">H37: Using alt attributes on img elements </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H53.html">H53: Using the body of the object element </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/H86.html">H86: Providing text alternatives for ASCII art, emoticons, and leetspeak </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/PDF1.html">PDF1: Applying text alternatives to images with the Alt entry in PDF documents </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="padding-left">
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/SL5.html">SL5: Defining a Focusable Image Class for Silverlight </a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA6.html">ARIA6: Using aria-label to provide labels for objects</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA10.html">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://www.w3.org/TR/WCAG20-TECHS/G68.html">G68: Providing a short text alternative that describes the purpose of live audio-only and live video-only content</a> <i>using one of the following techniques</i>:
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>
+          Short text alternative techniques for Situation D:
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+
+
+
+
+
+
+
+      <tr class="disabled">
         <td><b>Success Criterian Complies</b></td>
         <td>
           <div class="check">
@@ -715,8 +930,6 @@
         </td>
       </tr>
       <tr class="disabled">
-        <td></td>
-        <td></td>
         <td colspan="4">
           <div class="textarea">
             <label class="textarea__label" for="sc111-comment">
@@ -729,7 +942,7 @@
     </table>
 
     <div class="container">
-      <p><b>Guideline 1.2 Time-based Media</b>: Provide alternatives for time-based media</p>
+      <p><a href="https://www.w3.org/TR/WCAG20/#media-equiv"><b>Guideline 1.2 Time-based Media</b></a>: Provide alternatives for time-based media</p>
     </div>
    
     <table>
@@ -775,7 +988,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -783,7 +996,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -832,7 +1045,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -840,7 +1053,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -901,7 +1114,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -909,7 +1122,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -960,7 +1173,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -968,7 +1181,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1029,7 +1242,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1037,7 +1250,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1077,7 +1290,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1085,7 +1298,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1119,7 +1332,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1127,7 +1340,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1181,7 +1394,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1189,7 +1402,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1235,7 +1448,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1243,7 +1456,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1251,7 +1464,7 @@
     </table>
 
     <div class="container">
-      <p><b>Guideline 1.3 Adaptable</b>: Create content that can be presented in different ways (for example simpler layout) without losing information or structure</p>
+      <p><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation"><b>Guideline 1.3 Adaptable</b></a>: Create content that can be presented in different ways (for example simpler layout) without losing information or structure</p>
     </div>
 
     <table>
@@ -1463,7 +1676,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1471,7 +1684,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1526,7 +1739,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1534,7 +1747,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1565,7 +1778,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1573,7 +1786,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1581,7 +1794,7 @@
     </table>
 
     <div class="container">
-      <p><b>Guideline 1.4 Distinguishable</b>: Make it easier for users to see and hear content including separating foreground from background</p>
+      <p><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast"><b>Guideline 1.4 Distinguishable</b></a>: Make it easier for users to see and hear content including separating foreground from background</p>
     </div>
 
     <table>
@@ -1657,7 +1870,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1665,7 +1878,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1711,7 +1924,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1719,7 +1932,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1805,7 +2018,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1813,7 +2026,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1893,7 +2106,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1901,7 +2114,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -1951,7 +2164,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -1959,7 +2172,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2044,7 +2257,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2052,7 +2265,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2087,7 +2300,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2095,7 +2308,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2276,7 +2489,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2284,7 +2497,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2330,7 +2543,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2338,7 +2551,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2347,7 +2560,7 @@
 
     <div class="container">
       <h2>Principle 2: Operable – User interface components and navigation must be operable.</h2>
-      <p><b>Guideline 2.1 Keyboard Accessible</b>: Make all functionality available from the keyboard</p>
+      <p><a href="https://www.w3.org/TR/WCAG20/#keyboard-operation"><b>Guideline 2.1 Keyboard Accessible</b></a>: Make all functionality available from the keyboard</p>
     </div>
 
     <table>
@@ -2414,7 +2627,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2422,7 +2635,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2452,7 +2665,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2460,7 +2673,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2491,7 +2704,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2499,7 +2712,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2507,7 +2720,7 @@
     </table>
 
     <div class="container">
-      <p><b>Guideline 2.2 Enough Time</b>: Provide users enough time to read and use content.</p>
+      <p><a href="https://www.w3.org/TR/WCAG20/#time-limits"><b>Guideline 2.2 Enough Time</b></a>: Provide users enough time to read and use content.</p>
     </div>
 
     <table>
@@ -2620,7 +2833,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2628,7 +2841,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2718,7 +2931,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2726,7 +2939,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2747,7 +2960,7 @@
           <p>AAA</p>
         </td>
         <td>
-          <p><b>2.2.3 No Timing:</b> Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events</p>
+          <p><b>2.2.3 No Timing</b>: Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events</p>
         </td>
         <td>
           <p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G5.html"><b>G5:</b></a>  Allowing users to complete an activity without any time limit</p>
@@ -2756,7 +2969,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2764,7 +2977,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2810,7 +3023,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2818,7 +3031,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2861,7 +3074,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2869,7 +3082,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2877,7 +3090,7 @@
     </table>
 
     <div class="container">
-      <p><b>Guideline 2.3 Seizures</b>: Do not design content in a way that is known to cause seizures.</p>
+      <p><a href="https://www.w3.org/TR/WCAG20/#seizure"><b>Guideline 2.3 Seizures</b></a>: Do not design content in a way that is known to cause seizures.</p>
     </div>
 
     <table>
@@ -2919,7 +3132,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2927,7 +3140,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2957,7 +3170,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -2965,7 +3178,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -2973,7 +3186,7 @@
     </table>
 
     <div class="container">
-      <p><b>Guideline 2.4 Navigable</b>: Provide ways to help users navigate, find content, and determine where they are.</p>
+      <p><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms"><b>Guideline 2.4 Navigable</b></a>: Provide ways to help users navigate, find content, and determine where they are.</p>
     </div>
 
     <table>
@@ -3065,7 +3278,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3073,7 +3286,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3104,7 +3317,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3112,7 +3325,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3192,7 +3405,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3200,7 +3413,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3341,7 +3554,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3349,7 +3562,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3425,7 +3638,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3433,7 +3646,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3471,7 +3684,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3479,7 +3692,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3541,7 +3754,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3549,7 +3762,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3603,7 +3816,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3611,7 +3824,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3699,7 +3912,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3707,7 +3920,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3745,7 +3958,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3753,7 +3966,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3762,7 +3975,7 @@
 
     <div class="container">
       <h2>Principle 3: Understandable – Information and the operation of user interface must be understandable.</h2>
-      <p><b>Guideline 3.1 Readable</b>: Make content readable and understandable.</p>
+      <p><a href="https://www.w3.org/TR/WCAG20/#meaning"><b>Guideline 3.1 Readable</b></a>: Make content readable and understandable.</p>
     </div>
 
     <table>
@@ -3788,7 +4001,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3796,7 +4009,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3826,7 +4039,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3834,7 +4047,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -3954,7 +4167,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -3962,7 +4175,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -4098,7 +4311,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -4106,7 +4319,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -4168,7 +4381,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -4176,7 +4389,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -4238,7 +4451,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -4246,7 +4459,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -4254,7 +4467,7 @@
     </table>
 
     <div class="container">
-      <p><b>Guideline 3.2 Predictable</b>: Make Web pages appear and operate in predictable ways</p>
+      <p><a href="https://www.w3.org/TR/WCAG20/#consistent-behavior"><b>Guideline 3.2 Predictable</b></a>: Make Web pages appear and operate in predictable ways</p>
     </div>
 
     <table>
@@ -4280,7 +4493,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -4288,7 +4501,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -4350,7 +4563,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -4358,7 +4571,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -4388,7 +4601,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -4396,7 +4609,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -4442,7 +4655,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -4450,7 +4663,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -4549,7 +4762,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -4557,7 +4770,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -4565,7 +4778,7 @@
     </table>
 
     <div class="container">
-      <p><b>Guideline 3.3 Input Assistance</b>: Help users avoid and correct mistakes</p>
+      <p><a href="https://www.w3.org/TR/WCAG20/#minimize-error"><b>Guideline 3.3 Input Assistance</b></a>: Help users avoid and correct mistakes</p>
     </div>
 
     <table>
@@ -4673,7 +4886,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -4681,7 +4894,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -4807,7 +5020,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -4815,7 +5028,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -4948,7 +5161,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -4956,7 +5169,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -5060,7 +5273,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -5068,7 +5281,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -5148,7 +5361,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -5156,7 +5369,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -5265,7 +5478,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -5273,7 +5486,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -5283,7 +5496,7 @@
     <div class="container">
       <h2>Principle 4: Robust – Content must be robust enough that it can interpreted reliably by a
       wide variety of user agents, including assistive technologies.</h2>
-      <p><b>Guideline 4.1 Compatible</b>: Maximise compatibility with current and future user agents, including assistive technologies</p>
+      <p><a href="https://www.w3.org/TR/WCAG20/#ensure-compat"><b>Guideline 4.1 Compatible</b></a>: Maximise compatibility with current and future user agents, including assistive technologies</p>
     </div>
 
     <table>
@@ -5346,7 +5559,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -5354,7 +5567,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
@@ -5477,7 +5690,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td><b>Success Criterian Complies</b></td>
@@ -5485,7 +5698,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="disabled">
         <td></td>
         <td></td>
         <td colspan="4"><b>Comment</b></td>
