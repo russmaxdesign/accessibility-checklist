@@ -38,3 +38,63 @@ th {
 .disabled {
   background: #eee;
 }
+
+.textarea span {
+  display: block;
+  margin: 0 0 .3em;
+}
+
+.textarea__control {
+  display: block;
+  width: 100%;
+  height: 5em;
+  padding: .5em;
+  font-size: 1em;
+}
+
+
+.textarea__control,
+.input__control {
+  border: 1px solid #666;
+  border-radius: 0;
+  color: #000;
+  background-color: #ffd;
+}
+
+.check {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+}
+
+.check__label {
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 26px;
+  height: 26px;
+  text-indent: -10000px;
+  border: 1px solid #666;
+  background-color: #ffd;
+}
+
+.check__control:checked + .check__label {
+  background-image: url(../img/check_02.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.check__control:focus + .check__label {
+  outline-width: 5px;
+  outline-style: solid;
+  outline-color: Highlight;
+}
+
+@media (-webkit-min-device-pixel-ratio:0) {
+  .check__control:focus + .check__label {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+  }
+}

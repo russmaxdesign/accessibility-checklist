@@ -19,11 +19,33 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/masters\/graph.ai": {
+	"\/assets\/img\/check_01.png": {
+		"ft": 32768,
+		"iS": 139,
+		"oA": 0,
+		"oAP": "\/assets\/img\/check_01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/check_02.png": {
+		"ft": 32768,
+		"iS": 216,
+		"oA": 0,
+		"oAP": "\/assets\/img\/check_02.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/masters\/check.ai": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/assets\/masters\/graph.ai",
+		"oAP": "\/assets\/masters\/check.ai",
 		"oF": 0
 		},
 	"\/assets\/scss\/_accessible-svg.scss": {
