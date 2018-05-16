@@ -1,0 +1,40 @@
+hr {
+  margin: 3em 0;
+}
+
+table p {
+  margin: 0;
+}
+
+table {
+  margin: 1em 0 4em;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #bbb;
+  padding: 1em;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #eee;
+}
+
+.container {
+  margin-left: 0;
+}
+
+.width5 {
+  width: 5%;
+}
+
+.width40 {
+  width: 40%;
+}
+
+.disabled {
+  background: #eee;
+}
